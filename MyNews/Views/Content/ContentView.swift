@@ -11,20 +11,18 @@ import CoreData
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            TabView {
-                NewsView()
-                    .tabItem {
-                        Image(systemName: "doc.richtext")
-                        Text("News")
-                    }
-                SavedArticlesView()
-                    .tabItem {
-                        Image(systemName: "folder")
-                        Text("Saved articles")
-                    }
-            }.tint(.black)
-        } 
+        TabView {
+            NewsView()
+                .tabItem {
+                    Image(systemName: "doc.richtext")
+                    Text("News")
+                }
+            SavedArticlesView()
+                .tabItem {
+                    Image(systemName: "folder")
+                    Text("Saved articles")
+                }
+        }.tint(.black)
     }
 }
 

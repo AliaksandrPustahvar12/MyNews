@@ -16,7 +16,7 @@ struct NewsView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.publishedAt, order: .reverse)]) private var savedArticles: FetchedResults<Article>
     
     var body: some View {
-      NavigationView {
+        NavigationView {
             List(viewModel.articles, id: \.self) { article in
                 HStack {
                     VStack {
