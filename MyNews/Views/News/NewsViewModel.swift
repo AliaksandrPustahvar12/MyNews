@@ -10,14 +10,14 @@ import CoreData
 
 class NewsViewModel: ObservableObject {
     
-    private let service = NetworkService()
+    private let networkService = NetworkService()
     
     private let dataBaseService = DataBaseService.shared
     
     @Published private(set) var articles = [ArticleDto]()
-   
+    
     func getArticles() async {
-        guard let result = await service.fetchData() else { return }
+        guard let result = await networkService.fetchData() else { return }
         await MainActor.run {
             articles = result.articles
         }

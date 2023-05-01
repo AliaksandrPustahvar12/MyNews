@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct News: Decodable {
+struct NewsDto: Decodable {
     var articles: [ArticleDto]
 }
 struct ArticleDto: Decodable, Hashable {

@@ -18,12 +18,17 @@ struct SavedArticlesView: View {
                 HStack {
                     VStack {
                         LazyImage(url: URL(string: article.urlToImage ?? "")) { data in
-                            if let image = data.image {
-                                image.resizable().frame(width: 80, height: 50, alignment: .center).aspectRatio(contentMode: .fill)
-                                    .cornerRadius(6)
-                            } else {
-                                Color.gray
-                            }
+                            Group {
+                                if let image = data.image {
+                                    image
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .cornerRadius(6)
+                                } else {
+                                    ProgressView()
+                                        .progressViewStyle(.circular)
+                                }
+                            }.frame(width: 80, height: 50, alignment: .center)
                         }
                         Spacer()
                     }

@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-final class DataBaseService: ObservableObject {
+final class DataBaseService {
     
     static let shared = DataBaseService()
     

@@ -9,12 +9,8 @@ import Foundation
 
 extension String {
     var asDate: Date {
-        var formatDate = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        if let date: Date = formatter.date(from: self) {
-            formatDate = date
-        }
-        return formatDate
-       }
+        return formatter.date(from: self) ?? .now
     }
+}
