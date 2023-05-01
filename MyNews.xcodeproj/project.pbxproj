@@ -22,6 +22,7 @@
 		D4AA168A29FBEDD4003186C6 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = D4AA168929FBEDD4003186C6 /* NukeUI */; };
 		D4AA168C29FC3FA1003186C6 /* SavedArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA168B29FC3FA0003186C6 /* SavedArticlesView.swift */; };
 		D4AA168E29FD9B92003186C6 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA168D29FD9B92003186C6 /* DataBaseService.swift */; };
+		D4FF693029FFEE5100C9BC4A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF692F29FFEE5100C9BC4A /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D483E3FA29FBBB9200EF8892 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		D4AA168B29FC3FA0003186C6 /* SavedArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArticlesView.swift; sourceTree = "<group>"; };
 		D4AA168D29FD9B92003186C6 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		D4FF692F29FFEE5100C9BC4A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				D4FF692D29FEE69800C9BC4A /* Supported Files */,
 				D483E3E429FBA7C100EF8892 /* Preview Content */,
 				D4FF692C29FEE65B00C9BC4A /* DataModels */,
+				D4FF693129FFF17600C9BC4A /* Extensions */,
 				D4FF692929FEE59C00C9BC4A /* Services */,
 				D4FF692A29FEE5F300C9BC4A /* Views */,
 			);
@@ -150,6 +153,14 @@
 				D4AA168B29FC3FA0003186C6 /* SavedArticlesView.swift */,
 			);
 			path = SavedArticles;
+			sourceTree = "<group>";
+		};
+		D4FF693129FFF17600C9BC4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4FF692F29FFEE5100C9BC4A /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			files = (
 				D483E3F929FBB0D400EF8892 /* NewsModel.swift in Sources */,
 				D483E3E129FBA7C100EF8892 /* ContentView.swift in Sources */,
+				D4FF693029FFEE5100C9BC4A /* String.swift in Sources */,
 				D483E3EB29FBA7C100EF8892 /* MyNews.xcdatamodeld in Sources */,
 				D483E3F229FBAC4A00EF8892 /* NewsView.swift in Sources */,
 				D483E3F729FBAF0F00EF8892 /* NetworkService.swift in Sources */,

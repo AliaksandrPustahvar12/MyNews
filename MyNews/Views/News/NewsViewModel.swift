@@ -31,14 +31,4 @@ class NewsViewModel: ObservableObject {
         articleToSave.id = .init()
         dataBaseService.save(context: dataBaseService.context)
     }
-    
-    func dateFormatter(stringDate: String) -> Date {
-        var formatDate = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        if let date: Date = formatter.date(from: stringDate) {
-            formatDate = date
-        }
-        return formatDate
-    }
 }

@@ -39,7 +39,7 @@ struct NewsView: View {
                         Spacer()
                         HStack {
                             Spacer()
-                            Text(viewModel.dateFormatter(stringDate: article.publishedAt).formatted(date: .long, time: .shortened))
+                            Text(article.publishedAt.asDate.formatted(date: .long, time: .shortened))
                                 .font(.system(size: 14, weight: .light))
                         }
                     }
